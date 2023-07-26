@@ -1,0 +1,19 @@
+{
+    "name": "dhiego/orcamento",
+    "description": "site para orçamentos",
+    "autoload": {
+        "psr-4": {
+            "Dhiego\\Orcamento\\": "src/",
+            "config\\": "src/config"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhiego Balthazar",
+            "email": "dhiegobalthazar@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
+}
