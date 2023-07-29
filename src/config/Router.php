@@ -7,9 +7,8 @@ class Router extends RouteSwitch
 {
     public function run(string $requestUri)
     {
-        $route = substr($requestUri, 11);
-        echo $route;
-        if ($route === '') {
+        $route = explode("/", strtolower($requestUri))[2];
+        if ($route === "") {
             $this->home();
         } else {
             $this->$route();
